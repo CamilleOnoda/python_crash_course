@@ -25,11 +25,11 @@ Fellowship.insert(0, 'Legolas')
 Fellowship.insert(2, 'BaikinMan')
 Fellowship.append('Terminator')
 for guest in Fellowship:
-    print(f"Dear {guest}, join us for mighty dinner!")
+    print(f"Dear {guest}, join us for a mighty dinner!")
 
 
 # Shrinking guest list
-print(f"\nI'm sorry to inform that I can only invite 2 people.")
+print(f"\nI'm sorry to inform that I can only invite 2 people.\n")
 print(Fellowship)
 guest_pop1 = Fellowship.pop(-1)
 guest_pop2 = Fellowship.pop(4)
@@ -38,8 +38,63 @@ print(f"I'm sorry {guest_pop1}, see you next time!")
 print(f"I'm sorry {guest_pop2}, see you next time!")
 print(f"I'm sorry {guest_pop3}, see you next time!")
 print(Fellowship)
-del Fellowship[0:3]
+#del Fellowship[0:3]
+#print(Fellowship)
+
+
+# Seeing the world. Think of at least 5 places you'd like to visit
+places = ['Jasper', 'Mongolia', 'Yellowstone National Park', 'New Zealand', 'Hokkaido']
+print()
+print("\nHere is the original list:")
+print(places)
+print("Here is the sorted list:")
+x = sorted(places)
+print(x)
+print("Here is the original list again:")
+print(places)
+
+print("\nHere is the list in reverse order:")
+places.reverse()
+print(places)
+print("Here is the list in the original order:")
+places.reverse()
+print(places)
+
+print("\nHere is the list in alphabetical order:")
+places.sort()
+print(places)
+print("Here is the list in reverse-alphabetical order:")
+places.sort(reverse=True)
+print(places)
+
+
+# Dinner guests
+print()
 print(Fellowship)
+number_guests = len(Fellowship)
+print(f"\nI invited {number_guests} people for dinner.")
 
 
+# Every function
+mtg_card = ['Wrenn and Six', 'Mycosynth Golem', 'Land Tax', 'Cruel Tutor', 'Primal Vigor', 'Phyrexian Tower', 'Brazen Borrower', 'The Chain Veil', 'Emeria, the Sky Ruin', 'Food Chain']
+for card in range(len(mtg_card)):
+    mtg_card[card] = mtg_card[card].lower()
+print()
+print(mtg_card)
 
+card_popped = mtg_card.pop(-1)
+print(card_popped)
+print(mtg_card)
+
+print(sorted(mtg_card))
+mtg_card.reverse()
+print(mtg_card)
+mtg_card.reverse()
+print(mtg_card)
+
+mtg_card.sort(reverse=True)
+print(mtg_card)
+mtg_card.reverse()
+print(mtg_card)
+print(len(mtg_card))
+print(mtg_card[-4])

@@ -1,5 +1,4 @@
             # Lists are created using square brackets, single quotes and seperated by a comma
-            # Accessed by index
 
 
 family_members = ['Jin', 'Yuzuki', 'Isabelle', 'Christian', 'Charlotte', 'Carole', 'Shunji', 'Atsuko', 'Kanjiro']
@@ -16,44 +15,72 @@ bicycles = [' giant', 'cannondale', 'treck', 'specialized']
 #print(f"My first bicyle was a {bicycles[0].title().strip()}.")
 
 
-            # Modify elements in a list
+            # MODIFY elements in a list
 bicycles[-1] = 'BMC'
 #print(bicycles)
 
 
-            # Add elements to a list. Append method takes one argument and append it at the end of the list.
+            # ADD elements to a list. Append method takes one argument and append it at the end of the list.
 bicycles.append('specialized')
 bicycles[0] = bicycles[0].strip()
 #print(bicycles)
 
 
-            #Insert elements to a list at any position in the list by specifying the index.
+            # INSERT elements to a list at any position in the list by specifying the index.
 bicycles.insert(0, 'Chocolate')
 #print(bicycles)
 
 
-            # Deleting elements from a list, if we know its position. Value can't be accessed anymore afterwards.
+            # DELETE elements from a list, if we know its position. Value can't be accessed anymore afterwards.
 del bicycles[0]
 #print(bicycles)
 
 
-            # Removing items with pop() method. If no index is specified: removes by default the last item from the list. The value is still accessible.
+            # POP items with pop() method. If no index is specified: removes by default the last item from the list. The value is still accessible.
 bicycles_popped = bicycles.pop()
 #print(bicycles)
 #print(bicycles_popped)
 
-            # Pop() method can be useful if the list is in chronological order and for exemple, here, I want to print the last bicycle I owned:
-last_owned = bicycles.pop()
+            # pop() method can be useful if the list is in chronological order and for example, here, I want to print the last bicycle I owned:
+#print(bicycles)
+#last_owned = bicycles.pop()
 #print(f"The last bicycle I owned was a {last_owned.upper()}.")
+#print(bicycles)
 
             # Popping item from any position
 first_owned = bicycles.pop(0)
 #print(f"The first bicycle I owned was a {first_owned.upper()}.")
+#print(bicycles)
 
-            # Removing an item by value. remove() only the first occurence of the item. Use a loop to remove every occurences.
+
+            # REMOVE an item by value. remove() only the first occurence of the item. Use a loop to remove every occurences.
 bikes = ['Giant', 'Cannondale', 'BMC', 'Specialized', 'Treck']
 too_expensive = 'Specialized'
 bikes.remove(too_expensive)
-print(bikes)
-print(f"A {too_expensive} is too exepensive for me.")
+#print(bikes)
+#print(f"A {too_expensive} is too exepensive for me.")
 
+
+            # SORT a list permanently with sort() method
+cars = ['bmw', 'toyota', 'audi', 'suzuki']
+#cars.sort()
+print(cars)
+#cars.sort(reverse=True)
+#print(cars)
+
+            # SORT temporarily with sorted() function
+print("\nHere is the original list:")
+print(cars)
+print("Here is the sorted list:")
+print(sorted(cars))
+print("here is the original list again:")
+print(cars)
+
+
+            #REVERSE()method. Reverse the order a list permanently.
+cars.reverse()
+print(cars)
+
+
+            # LENGTH of a list
+print(len(cars))
