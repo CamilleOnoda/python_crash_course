@@ -41,11 +41,13 @@ bicycles_popped = bicycles.pop()
 #print(bicycles)
 #print(bicycles_popped)
 
+
             # pop() method can be useful if the list is in chronological order and for example, here, I want to print the last bicycle I owned:
 #print(bicycles)
 #last_owned = bicycles.pop()
 #print(f"The last bicycle I owned was a {last_owned.upper()}.")
 #print(bicycles)
+
 
             # Popping item from any position
 first_owned = bicycles.pop(0)
@@ -68,6 +70,7 @@ print(cars)
 #cars.sort(reverse=True)
 #print(cars)
 
+
             # SORT temporarily with sorted() function
 print("\nHere is the original list:")
 print(cars)
@@ -83,4 +86,38 @@ print(cars)
 
 
             # LENGTH of a list
-print(len(cars))
+#print(len(cars))
+
+
+            # RANGE function
+for value in range(1, 6):
+    print(value)
+print()
+for value in range(10):
+    print(value)
+
+
+            # Make a list of numbers with range()
+numbers = list(range(1, 7))
+print(numbers)
+print()
+
+
+            # Skip numbers with range(). The third argument is used as a step size
+odd_numbers = list(range(1, 52, 2))
+print(odd_numbers)
+
+
+            # List of the first 10 square numbers
+squares = []
+for value in range(1, 11):
+    squares.append(value ** 2)
+    #square = value ** 2
+    #squares.append(square)
+print(squares)
+
+
+digits = [1, 2, 3, 4, 5, 50, 89, 10, 569, 89]
+print(min(digits))
+print(max(digits))
+print(sum(digits))
