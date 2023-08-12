@@ -6,7 +6,9 @@ for value in range(1, 11):
 #print(squares)
 
 # Same with a list comprehension.
-squares = [value ** 2 for value in range(1, 11)] # The value we want to store in 'squares' is 'value ** 2'. We then write the for loop to generate the numbers.
+# Define the expression for the values I want to store in the list: 'value ** 2'. 
+# Then write a for loop to generate the numbers to feed into the expression.
+squares = [value ** 2 for value in range(1, 11)]
 #print(squares)
 
 numbers = []
@@ -27,3 +29,7 @@ cubes = []
 for value in range(1, 10):
     cubes.append(value ** 3)
 print(cubes)
+
+cubes = [cube for cube in range(1, 11)]
+print(cubes)
+
