@@ -1,4 +1,4 @@
-cars = ['audi', 'bmw', 'subaru', 'toyota']
+cars = ['audi', 'bmw', 'subaru', 'suzuki']
 for car in cars:
     if car == 'bmw':
         print(car.upper())
@@ -28,7 +28,7 @@ print(f"Your admission cost is: ${price}.")
 
 
 #Multiple elif blocks
-age = 65
+age = 50
 if age < 4:
     price = 0
 elif age < 18:

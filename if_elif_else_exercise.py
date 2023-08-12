@@ -71,5 +71,4 @@ for requested_topping in requested_toppings:
         print(f"Adding {requested_topping}.")
     else:
         print(f"Sorry we're out of {requested_topping}.")
-print("\nYou're pizza is ready!")
-print()
+print("\nYou're pizza is ready!\n")

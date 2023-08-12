@@ -1,5 +1,5 @@
 # Exercise
-username = ['admin', 'Kami63', 'Yukette007', 'Jon Bovi', 'Terminator']
+username = ['admin', 'Kami63', 'Yukette007', 'Jon Bovi', 'Terminator63']
 # Make sure the list is not empty
 if username:
     for name in username:
@@ -11,7 +11,7 @@ else:
     print("We need to find some users!")
 
 
-current_users = ['Terminator', 'Kami63', 'Yukette007', 'Jon Bovi', 'Harvey']
+current_users = ['Terminator63', 'Kami63', 'Yukette007', 'Jon Bovi', 'Harvey']
 new_users = ['YUKETTE007', 'Jon Bovi', 'Camille', 'Jin', 'Yuzuboule']
 
 
