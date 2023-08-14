@@ -17,6 +17,7 @@ favorite_numbers = {
     'Marc': '15',
     'Leon': '8',
 }
+#Loop through a dictionary: for key, value in dictionary.items():
 for key, value in favorite_numbers.items():
     print(f"{key}'s favorite number is: {value}.")
 print()
@@ -29,5 +30,5 @@ glossary = {
     'Linux': 'Linux is an open-source operating system designed to run on multiple types of devices, like laptops, phones, tablets, robots, and many others. In fact, the Android operating system is based on Linux!',
     'Main function': 'For a program to run, it must have a main function, which runs first each time you start your program. The main function is where the bulk of your code will go.',
 }
-for key, value in glossary.items():
-    print(f"{key}: {value}\n")
+for word, definition in glossary.items():
+    print(f"{word}: {definition}\n")
