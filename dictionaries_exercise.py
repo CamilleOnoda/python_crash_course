@@ -83,17 +83,17 @@ print()
 cities = {
     'tokyo': {
       'country': 'japan',
-      'population': 125_000_000,
+      'population': "125 000 000",
       'language': 'japanese', 
     },
     'paris': {
         'country': 'france',
-        'population': 64_000_000,
+        'population': "64 000 000",
         'language': 'french',
     },
     'new york': {
         'country': 'united states',
-        'population': 8_400_000,
+        'population':" 8 400 000",
         'language': 'english',
     }
 }
