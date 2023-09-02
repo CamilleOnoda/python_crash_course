@@ -42,8 +42,6 @@ describe_pet('rabbit', 'Marie')
 # Keyword Arguments
 # name-value pair passed to a function. We don't have to correctly order
 # the arguments in the function call and clarify the role of each value in the function call
-
-
 def describe_pet(animal_type, pet_name):
     """Display information about a pet."""
     print(f"\nI have a {animal_type}.")
