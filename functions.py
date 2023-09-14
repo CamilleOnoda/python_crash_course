@@ -49,3 +49,99 @@ def describe_pet(animal_type, pet_name):
 
 # Multiple function calls
 describe_pet(pet_name='Marie', animal_type='bear')
+
+
+# return values
+def get_formatted_name(first_name, last_name):
+    # return a neatly formatted full name
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+musician = get_formatted_name("noel", "gallagher")
+print(musician)
+
+
+# Making an argument optional. 
+# The optional argument here is set as an empty string at the end of the list of parameters
+# Introduce of while loop
+
+def get_formatted_name(first_name, last_name, middle_name=""):
+    # return a neatly formatted full name
+    if middle_name:
+        full_name = f"{first_name} {middle_name} {last_name}"
+    else:
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+while True:
+    print("\nPlease tell me your name: ")
+    print("(Enter 'q' at any time to quit.)")
+
+    f_name = input("First name: ")
+    if f_name == "q":
+        break
+
+    l_name = input("Last name: ")
+    if l_name == "q":
+        print(f"Hello, {f_name}!")
+        break
+
+    formatted_name = get_formatted_name(f_name, l_name)
+    print(f"\nHello, {formatted_name}!")
+    
+
+# Passing a list
+
+users = ["Camille", "Jin", "Yuzuki"]
+def greet_users(users):
+    for user in users:
+        print(f"Hello, {user.title()}!")
+    
+greet_users(users)
+
+# Returning a dictionary
+def build_person(first_name, last_name, age=None):
+    """Return a dictionary of information about a person."""
+    person = {'first': first_name, 'last': last_name}
+    if age:
+        person['age'] = age
+    return person
+
+musician = build_person('jimi', 'hendrix', '27')
+print(musician)
+print()
+
+
+# Modify a list in a function
+unprinted_designs = ['phone case', 'roboy pendant', 'dodecahedron']
+completed_models = []
+
+def printing_models(unprinted_designs, completed_models):
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        print(f"Printing model: {current_design}")
+        completed_models.append(current_design)
+
+
+def show_completed_models(completed_models):
+    print("\nThe following models have been printed: ")
+    for completed_model in completed_models:
+        print(f"- {completed_model}")
+
+
+printing_models(unprinted_designs, completed_models)
+show_completed_models(completed_models)
+
+
+# Passing a copy of a list to a function with the slice notation
+
+# To be used only if we have a specific reason to pass a copy of a list
+# More efficient for a function to work with an existing list than using the time
+# and memory to create a new one, especially for large lists.
+"""function_name(list_name[:])"""
+
+"""print_models(unprinted_designs[:], completed_models)"""
+
+
+
+# Passing an arbitrary number of arguments
