@@ -1,4 +1,5 @@
 # Object-oriented programming
+
 # 'Classes' represent real-world things and situations and we create 'objects' based on these classes
 # With a class: we define the general behavior that a whole category of 'objects' can have.
 # Making an 'object' from a 'class' is called 'instantiation' and we work with 'instances' of a class
@@ -9,10 +10,11 @@
 
 # By convention, class names are capitalized
 class Dog:
-    # The __init__ method (function part of class is a method)
+    # The __init__ method (function part of a class is a method)
     # The __init__ method is run automatically whenever we create a new instance based on the Dog class
     # The self parameter must always be included, in first position.
-    # It gives access to the attributes and methods in the class
+    # It refers to the instance of the class that is being used.
+    # It gives access to the attributes and methods in the class.
     def __init__(self, name, age):
         # Initialize name and age attributes
         # Variable accessible through instances are called 'attribute'
@@ -29,12 +31,19 @@ class Dog:
         print(f"{self.name} rolled over!")
 
 
-
 # Making an instance of a class
 # A class is a set of isntructions for how to make an instance
 # Instance representing a specific dog:
-
 my_dog = Dog('Catou', 4)
-
+# Accessing attributes 'my_dog.name'
 print(f"My dog's name is {my_dog.name}. ", end="")
 print(f"He is {my_dog.age} years old.")
+# After we create an instance from the class Dog, we can use the dot notation to call any methods defined in Dog
+my_dog.sit()
+my_dog.roll_over()
+
+
+# Creating multiple instances
+your_dog = Dog('Lucy', 3)
+print(f"My dog's name is {your_dog.name}. ", end="")
+print(f"He is {your_dog.age} years old.")
