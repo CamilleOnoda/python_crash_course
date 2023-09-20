@@ -65,7 +65,7 @@ print(musician)
 # The optional argument here is set as an empty string at the end of the list of parameters
 # Introduce of while loop
 
-def get_formatted_name(first_name, last_name, middle_name=""):
+"""def get_formatted_name(first_name, last_name, middle_name=""):
     # return a neatly formatted full name
     if middle_name:
         full_name = f"{first_name} {middle_name} {last_name}"
@@ -87,7 +87,7 @@ while True:
         break
 
     formatted_name = get_formatted_name(f_name, l_name)
-    print(f"\nHello, {formatted_name}!")
+    print(f"\nHello, {formatted_name}!")"""
     
 
 # Passing a list
@@ -131,6 +131,7 @@ def show_completed_models(completed_models):
 
 printing_models(unprinted_designs, completed_models)
 show_completed_models(completed_models)
+print()
 
 
 # Passing a copy of a list to a function with the slice notation
@@ -145,3 +146,17 @@ show_completed_models(completed_models)
 
 
 # Passing an arbitrary number of arguments
+# Python allows a function to collect an arbitrary number of arguments from the calling statement.
+
+# The * in the parameter name tells python to make a tuple called 'toppings'
+def make_pizza(size, *toppings):
+    print(f"\nMaking a {size}cm pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+make_pizza("30", "pepperoni")
+make_pizza("20", "mushrooms", "extra cheese", "green peppers")
+
+
+# Mixing positional and arbitrary arguments
+# The parameter that accepts an arbitrary number of arguments must be placed last in the function defintion (See above!)

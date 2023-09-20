@@ -29,7 +29,5 @@ p.make_pizza(10, "cheese")
 # Importing all functions in a module
 # Tell Python to import every function in a module by using *
 # We don't need the dot notation. 
-# Best to use this approach. 
+# Best NOT to use this approach. 
 # Python may see several functions or variables with the same name and instead of importing the functions seperately, it will overwrite the functions.
-
-
