@@ -1,5 +1,5 @@
 # Deli
-"""sandwich_orders = ['ham', 'cheese', 'bacon', 'pastrami', 'pastrami', 'pastrami']
+sandwich_orders = ['ham', 'cheese', 'bacon', 'pastrami', 'pastrami', 'pastrami']
 finished_sandwiches = []
 
 print("We ran out of pastrami.")
@@ -15,11 +15,24 @@ while sandwich_orders:
 
 print(f"Sandwiches made:")
 for sandwich in finished_sandwiches:
-    print(sandwich)"""
+    print(sandwich)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Dream vacation. Program that polls the users for their dream vacation.
-responses = {}
+"""responses = {}
 polling_active = True
 
 while polling_active:
@@ -38,4 +51,4 @@ while polling_active:
 # Show the results
 print(f"--- Poll reuslts ---")
 for name, response in responses.items():
-    print(f"{name} would like to visit {response}")
+    print(f"{name} would like to visit {response}")"""
