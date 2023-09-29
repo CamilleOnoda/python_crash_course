@@ -7,6 +7,18 @@ path = Path('pi_digits.txt')
 content = path.read_text()
 content = content.rstrip()
 print(content)
+print()
 
+# Accessing a file's lines
+path = Path('pi_digits.txt')
+contents = path.read_text()
 
-# Relative and absolute file Paths
+lines = contents.splitlines()
+# Working with a file's content
+pi_string = ''
+for line in lines:
+    pi_string += line.lstrip()
+
+print(pi_string)
+print(len(pi_string))
+
