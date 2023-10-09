@@ -1,5 +1,6 @@
 import sys
 import pygame
+from ship import Ship
 
 
 class AlienInvasion:
