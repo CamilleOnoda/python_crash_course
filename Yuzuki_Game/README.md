@@ -1,7 +1,9 @@
-In Alien Invasion, the player controls a rocket ship that appears at the bottom
-center of the screen. The player can move the ship right and left using the arrow keys
-and shoot bullets using the spacebar. When the game begins, a fleet of aliens fill the sky 
-and moves across and down the screen. The player shoots and destroys the aliens. 
-If the player destroys all the aliens, a new fleet appears that moves faster than the 
-previous fleet. If any alien hits the player's ship or reaches the bottom of the screen,
-the player loses a ship. if the player loses three ships, the game ends.
+-- In Yuzuki's game, the player controls a character called Yuzuki that appears at the bottom
+center of the screen. 
+-- The player can move the girl right and left using the arrow keys and shoot hearts using the spacebar. 
+-- When the game begins, a group of ghosts fill the sky and moves across and down the screen. 
+-- The player shoots and destroys the ghosts. 
+-- If the player destroys all the ghosts, a new group appears that moves faster than the 
+previous group. 
+-- If any ghost hits the girl or reaches the bottom of the screen, the girl get scared. 
+-- If the player get scared three times, the game ends.
